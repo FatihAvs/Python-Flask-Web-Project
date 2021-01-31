@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  
+{% from "includes/formhelper.html" import render_field %}
+
+  <h3>Yorumunu gir</h3>
+  <hr>
+<form method= "post">
+  <dl>
+    {{ render_field(form.comment,class = "form-control")}}
+  
+    
+  </dl>
+  
+  
+  <button type="submit" class="btn btn-primary">Yorumunu Yap</button>
+</form>
+
+
+{% endblock  %}

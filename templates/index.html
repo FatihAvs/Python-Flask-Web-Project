@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    
+    <div class="jumbotron text-center">
+    
+    <h3>Fatih AVŞAR Kişisel Blogu</h3>
+    <p>Bu blog kişisel bir blogtur</p>
+
+    
+    </div>
+    
+   {% for article in articles %}
+        <li> Article Id: {{article.id}} - Tittle: {{article.content}} </li>
+
+
+   {% endfor %}
+{% endblock  %}
